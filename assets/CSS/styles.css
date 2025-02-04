@@ -1,0 +1,6 @@
+body{
+    background-image: url(../images/gingham_pattern_blue_background.jpg);
+    background-size: contain; /* Options: cover, contain, auto */
+  background-repeat: repeat; /* or no-repeat depending on your needs */
+  
+}
