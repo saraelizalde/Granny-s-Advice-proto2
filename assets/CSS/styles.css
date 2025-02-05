@@ -14,7 +14,8 @@ body {
 
   img {
     width: 100%;   
-    height: auto;  
+    height: auto;
+      
   }
   
 
@@ -24,5 +25,10 @@ body {
 /* Header */
 #header #introduction{
   background-color: white;
+}
+
+/* Categories */
+.card{
+  width: 18rem;
 }
 
