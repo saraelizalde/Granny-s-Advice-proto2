@@ -1,28 +1,53 @@
+/* Google fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Pinyon+Script&family=Playwrite+CA+Guides&family=Rochester&display=swap');
+
+
 /* Global styling */
+
+/* CSS Variables */
+:root{
+  --primary-font: "Libre Caslon Display", serif;
+  --secondary-font: "Pinyon Script", serif;
+  --baby-blue: #B1D5ED; 
+  --darker-blue: #7cb6dc; 
+  --baby-pink: #f8d0d7; 
+  --raspberry: #b2016b; 
+  --beige: #d8b5a7;
+}
+
 body {
   background-image: url(../images/gingham_pattern_blue_background.jpg);
   background-size: cover;
-  /*to make sure the image is not too big*/
+  /*to make sure the background image is not too big*/
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: var(--primary-font);
 }
-
 
 #header,
 #categories {
   max-width: 80%;
   margin: 0 auto;
-  background-color: white;
-  border-radius: 12px; /*Round corners*/
+  border-radius: 12px;
+  /*Round corners*/
+  background-color: var(--beige);
+  padding-bottom: 2rem;
+  padding-top: 1rem;
 }
 
 
 
 
 /* Navbar */
+.navbar-brand{
+  font-family: var(--secondary-font);
+  
+}
+
+
 
 
 /* Header */
@@ -32,6 +57,18 @@ body {
   height: auto;
 }
 
+#header h1 {
+  font-family: var(--secondary-font);
+}
+
+#header a{
+  color: var(--baby-pink);
+}
+
+#header a:hover{
+  color: var(--raspberry);
+}
+
 
 
 
@@ -39,16 +76,38 @@ body {
 
 .card {
   width: 18rem;
+  padding-top: 12px;
+}
+
+.card a{
+  background-color: var(--baby-pink);
+  border-color: var(--raspberry);
+  color: var(--raspberry);
+}
+
+.card a:hover{
+  background-color: var(--raspberry);
+  border-color: var(--raspberry);
+  color: var(--baby-pink);
 }
 
 
 
 /* Footer */
 
-footer{
-  background-color: white;
+footer {
+  background-color: var(--baby-pink);
   padding: 3rem;
 }
+
+#footer a{
+  color: var(--raspberry);
+}
+
+#footer a:hover{
+  color: white;
+}
+
 
 
 
@@ -56,6 +115,7 @@ footer{
 /* Media query */
 
 @media (min-width: 768px) {
+
   #categories,
   #header {
     max-width: 70%;
