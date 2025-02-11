@@ -10,16 +10,18 @@
   --secondary-font: "Pinyon Script", serif;
   --baby-blue: #B1D5ED; 
   --darker-blue: #7cb6dc; 
-  --baby-pink: #f8d0d7; 
-  --raspberry: #b2016b; 
+  --baby-pink: #e3c0c6; 
+  --raspberry: #B15C83; 
   --beige: #d8b5a7;
+  --vert: #9dc2a3; 
+  --white: white;
 }
 
 body {
-  background-image: url(../images/gingham_pattern_blue_background.jpg);
+  background-image: url(../images/flowers-7122856_1280.jpg);
   background-size: cover;
   /*to make sure the background image is not too big*/
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-attachment: fixed;
   margin: 0;
   padding: 0;
@@ -33,7 +35,7 @@ body {
   margin: 0 auto;
   border-radius: 12px;
   /*Round corners*/
-  background-color: var(--beige);
+  background-color: var(--vert);
   padding-bottom: 2rem;
   padding-top: 1rem;
 }
@@ -42,9 +44,12 @@ body {
 
 
 /* Navbar */
+#navigation {
+  background-color: var(--baby-pink);
+}
+
 .navbar-brand{
   font-family: var(--secondary-font);
-  
 }
 
 
@@ -62,7 +67,7 @@ body {
 }
 
 #header a{
-  color: var(--baby-pink);
+  color: var(--white);
 }
 
 #header a:hover{
@@ -77,6 +82,11 @@ body {
 .card {
   width: 18rem;
   padding-top: 12px;
+}
+
+.card-img-top{
+  height: 200px; 
+  object-fit: cover; 
 }
 
 .card a{
